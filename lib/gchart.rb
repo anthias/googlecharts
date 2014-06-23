@@ -11,11 +11,7 @@ class Gchart
   include GchartInfo
 
   def self.url(use_ssl = false)
-    if use_ssl
-      'https://chart.googleapis.com/chart?'
-    else
-      '//chart.apis.google.com/chart?'
-    end
+    '//chart.googleapis.com/chart?'
   end
 
   def self.types
